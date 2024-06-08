@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html { 
+    background: url(../img/furia.jfif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ body{
+    margin: 0;
+ }
+header > img{
+    width: 100px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    min-height: 30vh;
+}
+
+#menu{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    list-style: none;
+}
+
+#menu a{
+    /* remove o sublinhado do link */
+    text-decoration: none;
+    /* muda a cor do texto */
+    color: #000;
+    /* define o espaço interno do elemento */
+    padding: 8px 18px;
+    /* define o tamanho da fonte, e uma medida de fonte responsiva */
+    font-size: 1.3rem;
+}
+
+#perfil {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    gap: 110px;
+    align-items: center;
+}
+
+#perfil-dados h1{
+    font-size: 4rem;
+    line-height: 1.4;
+}
+
+#perfil-dados h2{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#perfil-dados p{
+    margin-top: 0;
+    font-style: oblique;
+    color: #6e6d6e;
+}
+
+#projetos{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 110px;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#projetos h2{
+    font-size: 10rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 5ch;
+    color: #202D73;
+    
+}
+
+.principal-destaque {
+    font-weight: bold;
+    background: blue;
+    padding: 4px;
+    border-radius: 2px 6px;
+    color: white;
+}
+
+#projetos-texto-principal {
+    line-height: 1.8;
+    font-size: 1.4rem;
+}
+
+#projetos-lista{
+    background: #202D73;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#projetos-lista h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#projetos-lista p{
+    margin: 0;
+    padding: 0;
+    color: #b9b8b8;
+}
+
+#projetos h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#projetos-tags {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+#projetos-tags li{
+    background-color: #fff;
+    color: #202D73;
+    border-radius: 4px;
+    padding: 5px 8px;
+    line-height: 1.4;
+
+}
+/* sessao projetos - final */
+
+/* sessao cursos - inicio */
+
+/* css cursos começo */
+#cursos{
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    background-color: #202D73;
+    min-height: 100vh;
+    /* height: 300px;
+    margin-top: 50px; */
+}
+
+#cursos-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 110px;
+    align-items: center;
+}
+
+#cursos-grid h2 {
+    line-height: 1;
+    font-size: 8rem;
+    color: #fff;
+    word-break: break-all;
+    max-width: 4ch;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+#cursos-texto-principal {
+    color: gray;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 4px;
+    margin-top: 110px;
+    font-size: 1.4rem;
+    
+}
+
+#cursos-lista{
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    margin-top: 65px;
+    background: black;
+    padding: 20px;
+}
+
+#cursos-lista p{
+    
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+
+#cursos-lista h3 {
+    color: white;
+    
+    
+}
+
+.cursos-destaque{
+    color: white;
+}
+
+#cursos-pai {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* word-break: break-all; */
+    /* flex-direction: column;  */
+    
+}
+
+#cursos-complementares h5 {
+    color: #696969;
+}
+
+.cursos-complementares-lista{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    
+
+}
+
+#idiomas h5{
+    color: white;
+}
+
+
+.idioma-cor p {
+    color: white;
+}
+
+
+.medio-cor{
+    color: gray;
+}
+/* css cursos final */
+/* inicio css footer */
+
+footer {
+    /* background: #000; */
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+#footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* height: 400px;
+    background: #034f92; */
+}
+
+#form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#form-grid input,select{
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #202c73;
+    border-radius: 4px;
+}
+
+.btn-contato {
+    padding: 12px 20px;
+    background: #202D73;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#footer-conteudo h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #202D73;
+    letter-spacing: 1.2rem;
+}
+
+#footer-inferior {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#footer-inferior a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+#footer-inferior a:hover{
+    color: #000000c7;
+}
+
+.alinhar-centro {
+    text-align: center;
+}
+
+.alinhar-direita{
+    text-align: right;
+    
+}
+
+.alinhar-esquerda {
+    text-align: left;
+}
+
+
+
+#copy {
+    padding-top: 20px 0px;
+    text-align: center;
+}
+
+#form-grid option{
+    font-size: 1.2rem;
+}
+
+#msg {
+    width: 100%;
+    height: 180px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: 1px solid #202c73;
+    border-radius: 4px;
+}
+
+#form-aviso {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #6e6d6d;
+}
+
+.borda-erro{
+    
+}
+
+.borda-original{
+
+}
+/* final css footer */
+
+/* inicio do CSS responsivo */
+/* o CSS inserido dentro @media abaixo, será carregado quando o dispositivo possuir tela com largura meno ou igual a 600px */
+/* Será o responsivo, desse código p/ cima é o DESKTOP */
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+    }
+
+    header ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu{
+        flex-direction: column;
+    }
+
+    #perfil{
+        width: 100%;
+        gap: 10px;
+        min-height: 400px;
+    }
+
+    #perfil-dados > h1{
+        font-size: 2.3rem;
+        max-width: 100%;
+    }
+
+    #perfil img{
+        width:100% ;
+    }
+
+    #projetos{
+        width: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    #projetos h2{
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #projetos-geral{
+        padding: 10px;
+    }
+
+    #cursos h2 {
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #cursos{
+        margin-top: 15px;
+    }
+
+    #cursos-grid {
+        width: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    #cursos-texto-principal {
+        padding: 10px;
+    }
+
+    #cursos-lista{
+        
+        padding: 5px;
+    }
+
+    #cursos-complementares, #idiomas {
+        padding: 10px;
+    }
+
+    #footer-conteudo {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #form-grid input{
+        width: 100%;
+    }
+
+    #footer-conteudo h2{
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+        letter-spacing: normal;
+    }
+
+    #footer-inferior {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .alinhar-direita{
+        text-align: center;
+    }
+
+    .alinhar-esquerda{
+        text-align: center;
+    }
+  
+     
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* final do CSS Responsivo */
